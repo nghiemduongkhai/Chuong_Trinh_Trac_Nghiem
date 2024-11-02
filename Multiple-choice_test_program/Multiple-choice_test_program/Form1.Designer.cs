@@ -157,6 +157,7 @@
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox1.Size = new System.Drawing.Size(214, 30);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TabStop = false;
             // 
             // button1
             // 
@@ -180,12 +181,6 @@
             this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Toán - 9",
-            "Lý - 9",
-            "Hóa - 9 ",
-            "Sinh - 9",
-            "Anh - 9"});
             this.comboBox1.Location = new System.Drawing.Point(337, 161);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
@@ -198,6 +193,7 @@
             this.ClientSize = new System.Drawing.Size(948, 518);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
+            this.Text = "Menu";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
