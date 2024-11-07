@@ -11,7 +11,7 @@ namespace Multiple_choice_test_program
         private List<string> choices;
         private Answer correctAnswer;
         public List<string> Choices { get => choices; set => choices = value; }
-        public Answer CorrectAnswer { get => CorrectAnswer; set => CorrectAnswer = value; }
+        public Answer CorrectAnswer { get => correctAnswer; set => correctAnswer = value; }
         public MultipleChoiceQuestion(int id, string questionText, List<string> choices, string correctAnswer)
         : base(id, questionText)
         {

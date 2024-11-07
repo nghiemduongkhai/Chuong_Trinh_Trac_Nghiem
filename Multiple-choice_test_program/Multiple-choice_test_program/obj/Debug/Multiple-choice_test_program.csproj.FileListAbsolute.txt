@@ -9,3 +9,4 @@ C:\Users\lenovo\source\repos\Multiple-choice_test_program\Multiple-choice_test_p
 C:\Users\lenovo\source\repos\Multiple-choice_test_program\Multiple-choice_test_program\obj\Debug\Multiple-choice_test_program.exe
 C:\Users\lenovo\source\repos\Multiple-choice_test_program\Multiple-choice_test_program\obj\Debug\Multiple-choice_test_program.pdb
 C:\Users\lenovo\source\repos\Multiple-choice_test_program\Multiple-choice_test_program\obj\Debug\Multiple_choice_test_program.Form2.resources
+C:\Users\lenovo\source\repos\Multiple-choice_test_program\Multiple-choice_test_program\obj\Debug\Multiple_choice_test_program.Form3.resources

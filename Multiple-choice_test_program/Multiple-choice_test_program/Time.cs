@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Timers;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace Multiple_choice_test_program
 {
@@ -12,30 +13,45 @@ namespace Multiple_choice_test_program
         private int duration; 
         private int elapsedTime; 
         private Timer timer; 
-        public Time() 
+        private Label label;
+        public event Action TimeUp;
+        public Time(Label label) 
         {
+            this.label = label;
             duration = 1200; 
             elapsedTime = 0; 
-            timer = new Timer(1000); 
-            timer.Elapsed += OnTimedEvent; 
+            timer = new Timer();
+            timer.Interval = 1000;
+            timer.Tick += OnTimedEvent; 
         }
         public void Start()
-        {//Winform
-            Console.WriteLine($"Thời gian còn lại: {duration / 60} phút {duration % 60} giây");
+        {
+            UpdateLabel($"{duration / 60} phút {duration % 60} giây");
             timer.Start(); 
         }
-        private void OnTimedEvent(Object source, ElapsedEventArgs e)
+        public void Stop()
+        {
+            timer.Stop();
+        }
+        public string GetElapsedTime()
+        {
+            return $"{elapsedTime / 60} phút {elapsedTime % 60} giây"; 
+        }
+        private void OnTimedEvent(Object source, EventArgs e)
         {
             elapsedTime++; 
             int remainingTime = duration - elapsedTime;
-            Console.Clear();
-            //Winform
-            Console.WriteLine($"Thời gian còn lại: {remainingTime / 60} phút {remainingTime % 60} giây");
+            UpdateLabel($"{remainingTime / 60} phút {remainingTime % 60} giây");
             if (IsTimeUp()) 
             {
-                Console.WriteLine("Thời gian đã hết!");
                 timer.Stop();
+                MessageBox.Show("Hết thời gian !!");
+                TimeUp?.Invoke();
             }
+        }
+        private void UpdateLabel(string text)
+        {
+            label.Text = text;
         }
         public bool IsTimeUp()
         {
