@@ -156,5 +156,13 @@ namespace Multiple_choice_test_program
                 // Người dùng đã chọn Cancel
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+            form4.Location = Location;
+            Hide();
+        }
     }
 }
