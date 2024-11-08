@@ -19,7 +19,7 @@ namespace Multiple_choice_test_program
         }
         public override string ToString()
         {
-            return $"{CategoryName} - {CategoryId}";
+            return $"{CategoryName}";
         }
     }
 }

@@ -10,6 +10,8 @@ namespace Multiple_choice_test_program
     {
         private string selectedAnswer;
         private int questionId;
+        public string SelectedAnswer { get => selectedAnswer; set => selectedAnswer = value; }
+        public int QuestionId { get => questionId; set => questionId = value; }
         public Selection(string selectedAnswer, int questionId)
         {
             this.selectedAnswer = selectedAnswer;

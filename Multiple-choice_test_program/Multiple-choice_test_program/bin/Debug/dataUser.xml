@@ -1,5 +1,17 @@
 <?xml version="1.0"?>
 <User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Nghiêm</Name>
-  <CountTest>0</CountTest>
+  <Names>
+    <string>nghiem</string>
+    <string>Nghiem</string>
+    <string>ngh</string>
+    <string>nghiêm</string>
+    <string>n</string>
+  </Names>
+  <CountTests>
+    <int>8</int>
+    <int>6</int>
+    <int>1</int>
+    <int>0</int>
+    <int>1</int>
+  </CountTests>
 </User>

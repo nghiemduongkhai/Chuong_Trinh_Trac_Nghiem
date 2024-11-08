@@ -12,6 +12,9 @@ namespace Multiple_choice_test_program
         private Category category;
         private int numberOfQuestions;
         private List<Question> questions;
+        public string Title { get => title; set => title = value; }
+        public List<Question> Questions { get => questions; set => questions = value; }
+
         public Test(string title, Category category, List<Question> questions)
         {
             this.title = title;

@@ -16,6 +16,8 @@ namespace Multiple_choice_test_program
     {
         private User currentUser;
         private List<Category> categories;
+        private QuestionBank questionBank;
+        private Test test;
         private bool isInitializing = true;
         private string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "dataUser.xml");
         public Form1()
@@ -26,11 +28,11 @@ namespace Multiple_choice_test_program
             LoadCategories();
             isInitializing = false;
             // Deserialize User từ file XML
-            currentUser = DeserializeFromXML(filePath) as User;
+            currentUser = User.LoadUser(filePath);
             // Nếu currentUser không null, hiển thị tên người dùng trong textBox
-            if (currentUser != null)
+            if (currentUser != null && currentUser.Names.Count > 0)
             {
-                textBox1.Text = currentUser.Name;
+                textBox1.Text = string.Empty;
             }
             else
             {
@@ -38,58 +40,26 @@ namespace Multiple_choice_test_program
             }
             this.FormClosed += Form1_FormClosed;
         }
-        private void SerializeToXML(object data, string filePath)
-        {
-            FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-            XmlSerializer sr = new XmlSerializer(typeof(User));
-            sr.Serialize(fs, data);
-            fs.Close();
-        }
-        private object DeserializeFromXML(string filePath)
-        {
-            // Kiểm tra xem tệp có tồn tại không
-            if (!File.Exists(filePath))
-            {
-                // Tạo tệp mới với User mặc định nếu tệp không tồn tại
-                User newUser = new User(""); // Hoặc có thể để tên trống
-                SerializeToXML(newUser, filePath); // Lưu User vào tệp
-                return newUser; // Trả về User mặc định
-            }
-            using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read))
-            {
-                try
-                {
-                    XmlSerializer sr = new XmlSerializer(typeof(User));
-                    object result = sr.Deserialize(fs);
-                    return result;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Lỗi khi tải dữ liệu: {ex.Message}");
-                    return null; // Trả về null trong trường hợp có lỗi
-                }
-            }
-        }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             // Lưu đối tượng currentUser vào file XML
             if (currentUser != null)
             {
-                SerializeToXML(currentUser, filePath);  
+                currentUser.SaveUser(filePath);
             }
             Application.Exit();
         }
         private void LoadCategories()
         {
             // Khởi tạo danh sách các Category
-            categories = new List<Category> 
-            { 
+            categories = new List<Category>     
+            {
                 new Category(0, "Chọn đề"),
                 new Category(1, "Toán"),
                 new Category(2, "Lý"),
                 new Category(3, "Hóa"),
                 new Category(4, "Sinh"),
-                new Category(5, "Anh")
+                new Category(5, "Anh")        
             };
             // Gán danh sách vào ComboBox
             comboBox1.DataSource = categories;
@@ -109,7 +79,33 @@ namespace Multiple_choice_test_program
                 {
                     int categoryId = selectedCategory.CategoryId;
                     string categoryName = selectedCategory.CategoryName;
-                    // Hoặc thực hiện các thao tác khác dựa trên categoryId và categoryName
+                    questionBank = new QuestionBank();
+                    questionBank.LoadQuestionsFromXml("questions.xml");
+                    List<Question> questions = null;
+                    switch (selectedCategory.CategoryId)
+                    {
+                        case 1:
+                            questions = questionBank.GetQuestions(1, 20);
+                            break;
+                        case 2:
+                            questions = questionBank.GetQuestions(21, 40);
+                            break;
+                        case 3:
+                            questions = questionBank.GetQuestions(41, 60);
+                            break;
+                        case 4:
+                            questions = questionBank.GetQuestions(61, 80);
+                            break;
+                        case 5:
+                            questions = questionBank.GetQuestions(81, 100);
+                            break;
+                        default:
+                            break;
+                    }
+                    if (questions != null)
+                    {
+                        test = new Test($"{selectedCategory.CategoryName} Test", categories[selectedCategory.CategoryId], questions);
+                    }
                 }
             }
         }
@@ -119,14 +115,11 @@ namespace Multiple_choice_test_program
             string userName = textBox1.Text.Trim();
             if (!string.IsNullOrEmpty(userName))
             {
-                // Gán tên cho User (khởi tạo mới hoặc cập nhật)
-                if (currentUser == null)
+                // Kiểm tra tên người dùng đã có trong danh sách chưa, nếu chưa thì thêm mới
+                int userIndex = currentUser.GetUserIndex(userName);
+                if (userIndex == -1)  // Nếu không tìm thấy tên trong danh sách
                 {
-                    currentUser = new User(userName); // Tạo mới User nếu chưa có
-                }
-                else
-                {
-                    currentUser.Name = userName; // Cập nhật tên nếu User đã tồn tại
+                    currentUser.AddUser(userName);  // Thêm người dùng mới vào danh sách
                 }
             }
             else
@@ -150,8 +143,10 @@ namespace Multiple_choice_test_program
             {
                 Form2 form2 = new Form2();
                 form2.SelectedValue = comboBox1.SelectedItem.ToString();
+                form2.User = currentUser;
                 form2.NameUser = userName;
                 form2.GetDate = DateTime.Now.ToString("dd/MM/yyyy");
+                form2.Test = test;
                 form2.Show();
                 form2.Location = Location;
                 Hide();

@@ -39,6 +39,10 @@ namespace Multiple_choice_test_program
         {
             label9.Text = date;
         }
+        public void SetScore(string score) 
+        { 
+            label11.Text = score;
+        }
         private void button1_Click(object sender, EventArgs e)
         { 
             Form1 form1 = new Form1();
@@ -50,6 +54,11 @@ namespace Multiple_choice_test_program
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit(); // Đóng toàn bộ chương trình
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Xem lịch sử làm bài tại đây 
         }
     }
 }

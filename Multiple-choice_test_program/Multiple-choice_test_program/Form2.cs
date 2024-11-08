@@ -3,21 +3,33 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Multiple_choice_test_program
 {
     public partial class Form2 : Form
     {
         private Time time;
+        private int correctCount ;
         private Dictionary<int, int> selectedAnswers = new Dictionary<int, int>();
         private Button selectedQuestionButton;
+        private MultipleChoiceQuestion question;
         private int currentQuestion = 0;
+        private string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "dataUser.xml");
         public string NameUser { get; set; }
+        public User User { get; set; }
+        public string SelectedValue
+        {
+            get { return label4.Text; }
+            set { label4.Text = value; } 
+        }
+        public string GetDate { get; set; }
+        public Test Test { get; set; }
+
         public Form2()
         {
             InitializeComponent();
@@ -28,96 +40,129 @@ namespace Multiple_choice_test_program
             radioButton2.CheckedChanged += AnswerSelected;
             radioButton3.CheckedChanged += AnswerSelected;
             radioButton4.CheckedChanged += AnswerSelected;
-            SelectQuestion(1, button1);
+            this.Load += new EventHandler(MainForm_Load);
             time.TimeUp += OnTimeUp;
             this.FormClosed += Form2_FormClosed;
         }
-        public string SelectedValue
+        private void MainForm_Load(object sender, EventArgs e)
         {
-            get { return label4.Text; }
-            set { label4.Text = value; } 
+            button1.PerformClick();
         }
-        public string GetDate { get; set; }
         //
+        private void GetQuestion(int i)
+        { 
+            // Lấy câu hỏi từ danh sách
+            MultipleChoiceQuestion question = Test.Questions[i - 1] as MultipleChoiceQuestion;
+            if (question != null)
+            {
+                List<RadioButton> radioButtons = new List<RadioButton> 
+                {   
+                    radioButton1, radioButton2, radioButton3, radioButton4
+                };
+                // Hiển thị câu hỏi và các lựa chọn
+                question.DisplayQuestion(label8, radioButtons);
+
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             SelectQuestion(1, button1);
+            GetQuestion(1);
         }
         private void button2_Click(object sender, EventArgs e)
         {
             SelectQuestion(2, button2);
+            GetQuestion(2);
         }
         private void button3_Click(object sender, EventArgs e)
         {
             SelectQuestion(3, button3);
+            GetQuestion(3);
         }
         private void button4_Click(object sender, EventArgs e)
         {
             SelectQuestion(4, button4);
+            GetQuestion(4);
         }
         private void button5_Click(object sender, EventArgs e)
         {
             SelectQuestion(5, button5);
+            GetQuestion(5);
         }
         private void button6_Click(object sender, EventArgs e)
         {
-            SelectQuestion(6, button6); 
+            SelectQuestion(6, button6);
+            GetQuestion(6);
         }
         private void button7_Click(object sender, EventArgs e)
         {
             SelectQuestion(7, button7);
+            GetQuestion(7);
         }
         private void button8_Click(object sender, EventArgs e)
         {
             SelectQuestion(8, button8);
+            GetQuestion(8);
         }
         private void button9_Click(object sender, EventArgs e)
         {
             SelectQuestion(9, button9);
+            GetQuestion(9);
         }
         private void button10_Click(object sender, EventArgs e)
         {
             SelectQuestion(10, button10);
+            GetQuestion(10);
         }
         private void button11_Click(object sender, EventArgs e)
         {
             SelectQuestion(11, button11);
+            GetQuestion(11);
         }
         private void button12_Click(object sender, EventArgs e)
         {
             SelectQuestion(12, button12);
+            GetQuestion(12);
         }
         private void button13_Click(object sender, EventArgs e)
         {
             SelectQuestion(13, button13);
+            GetQuestion(13);
         }
         private void button14_Click(object sender, EventArgs e)
         {
             SelectQuestion(14, button14);
+            GetQuestion(14);
         }
         private void button15_Click(object sender, EventArgs e)
         {
             SelectQuestion(15, button15);
+            GetQuestion(15);
         }
         private void button16_Click(object sender, EventArgs e)
         {
             SelectQuestion(16, button16);
+            GetQuestion(16);
         }
         private void button17_Click(object sender, EventArgs e)
         {
             SelectQuestion(17, button17);
+            GetQuestion(17);
         }
         private void button18_Click(object sender, EventArgs e)
         {
             SelectQuestion(18, button18);
+            GetQuestion(18);
         }
         private void button19_Click(object sender, EventArgs e)
         {
             SelectQuestion(19, button19);
+            GetQuestion(19);
         }
         private void button20_Click(object sender, EventArgs e)
         {
             SelectQuestion(20, button20);
+            GetQuestion(10);
         }
         private void SelectQuestion(int questionNumber, Button questionButton)
         {
@@ -186,15 +231,25 @@ namespace Multiple_choice_test_program
                 MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
+                int userIndex = User.GetUserIndex(NameUser);
+                if (userIndex != -1)
+                {
+                    User.IncrementTestCount(userIndex);
+                    User.SaveUser(filePath);
+                }
                 time.Stop();
                 string elapsedTime = time.GetElapsedTime();
+                // Tính điểm 
+                ScoreCalculator calculator = new ScoreCalculator();
+                float score = calculator.CalculateScore(correctCount, Test.Questions.Count);
                 Form3 form3 = new Form3();
                 form3.SetName(NameUser);
                 form3.SetCategory(SelectedValue);
                 form3.SetDate(GetDate);
                 form3.ElapsedTime = elapsedTime;
-                form3.Show();
+                form3.SetScore(score.ToString());
                 form3.Location = Location;
+                form3.Show();
                 Hide();
             }
             else if (result == DialogResult.Cancel)
