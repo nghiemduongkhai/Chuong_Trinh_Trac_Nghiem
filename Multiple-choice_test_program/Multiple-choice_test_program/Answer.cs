@@ -18,8 +18,8 @@ namespace Multiple_choice_test_program
         public Answer() { }
         public Answer(string correctAnswer, int questionId)
         {
-            this.CorrectAnswer = correctAnswer;
-            this.QuestionId = questionId;
+            this.correctAnswer = correctAnswer;
+            this.questionId = questionId;
         }
         public bool IsCorrect(Selection selection)
         {

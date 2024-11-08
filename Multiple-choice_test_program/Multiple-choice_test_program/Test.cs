@@ -14,11 +14,12 @@ namespace Multiple_choice_test_program
         private List<Question> questions;
         public string Title { get => title; set => title = value; }
         public List<Question> Questions { get => questions; set => questions = value; }
+        public Category Category { get => category; set => category = value; }
 
         public Test(string title, Category category, List<Question> questions)
         {
             this.title = title;
-            this.category = category;
+            this.Category = category;
             this.questions = questions;
             numberOfQuestions = questions.Count;
         }

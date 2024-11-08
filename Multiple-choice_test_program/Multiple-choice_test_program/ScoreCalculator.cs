@@ -10,7 +10,7 @@ namespace Multiple_choice_test_program
     {
         public float CalculateScore(int correctCount, int totalQuestions)
         {
-            return (float)correctCount / totalQuestions * 100;
+            return (float)correctCount / totalQuestions * 10;
         }
     }
 }

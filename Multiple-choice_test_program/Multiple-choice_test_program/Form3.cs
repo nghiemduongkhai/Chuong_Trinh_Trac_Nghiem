@@ -55,10 +55,5 @@ namespace Multiple_choice_test_program
         {
             Application.Exit(); // Đóng toàn bộ chương trình
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            // Xem lịch sử làm bài tại đây 
-        }
     }
 }

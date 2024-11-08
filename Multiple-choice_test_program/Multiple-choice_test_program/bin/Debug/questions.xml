@@ -2,282 +2,1388 @@
 <Questions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <MultipleChoiceQuestion>
     <Id>1</Id>
-    <QuestionText>What is the capital of France?</QuestionText>
+    <QuestionText>Số nào sau đây là căn bậc hai số học của số a = 2,25</QuestionText>
     <Choices>
-      <string>Paris</string>
-      <string>London</string>
-      <string>Berlin</string>
-      <string>Madrid</string>
+      <string>1,5</string>
+      <string>–1,5 và 1,5</string>
+      <string>1,25</string>
+      <string>-1,5</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>Paris</CorrectAnswer>
+      <CorrectAnswer>1,5</CorrectAnswer>
       <QuestionId>1</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>2</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Số nào sau đây là căn bậc hai số học của số a = 0,36</QuestionText>
     <Choices>
-      <string>3</string>
-      <string>4</string>
-      <string>5</string>
-      <string>6</string>
+      <string>-0,6</string>
+      <string>0,6</string>
+      <string>0,9</string>
+      <string>-0,18</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>0,6</CorrectAnswer>
       <QuestionId>2</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>3</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = 3 – x^2. Tính f(−1)</QuestionText>
     <Choices>
-      <string>3</string>
-      <string>4</string>
-      <string>5</string>
-      <string>6</string>
+      <string>-2</string>
+      <string>2</string>
+      <string>1</string>
+      <string>0</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>2</CorrectAnswer>
       <QuestionId>3</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>4</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>4</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>5</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>5</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>6</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>6</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>7</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>7</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>8</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>8</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>9</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>9</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>10</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>10</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>11</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>11</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>12</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>12</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>13</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>13</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>14</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>14</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>15</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>15</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>16</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>16</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>17</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>17</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>18</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>18</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>19</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>19</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
   <MultipleChoiceQuestion>
     <Id>20</Id>
-    <QuestionText>What is 2 + 2?</QuestionText>
+    <QuestionText>Cho hàm số f(x) = x^3 + x. Tính f(2)</QuestionText>
     <Choices>
-      <string>3</string>
       <string>4</string>
-      <string>5</string>
       <string>6</string>
+      <string>8</string>
+      <string>10</string>
     </Choices>
     <CorrectAnswer>
-      <CorrectAnswer>4</CorrectAnswer>
+      <CorrectAnswer>10</CorrectAnswer>
       <QuestionId>20</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>21</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>21</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>22</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>22</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>23</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>23</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>24</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>24</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>25</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>25</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>26</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>26</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>27</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>27</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>28</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>28</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>29</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>29</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>30</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>30</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>31</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>31</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>32</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>32</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>33</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>33</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>34</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>34</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>35</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>35</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>36</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>36</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>37</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>37</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>38</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>38</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>39</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>39</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>40</Id>
+    <QuestionText>Đơn vị nào dưới đây là đơn vị của điện trở?</QuestionText>
+    <Choices>
+      <string>Ôm</string>
+      <string>Oát</string>
+      <string>Vôn</string>
+      <string>Ampe</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Ôm</CorrectAnswer>
+      <QuestionId>40</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>42</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>42</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>43</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>43</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>44</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>44</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>45</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>45</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>46</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>46</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>47</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>47</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>48</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>48</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>49</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>49</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>50</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>50</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>51</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>51</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>52</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>52</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>53</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>53</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>54</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>54</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>55</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>55</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>56</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>56</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>57</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>57</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>58</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>58</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>59</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>59</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>60</Id>
+    <QuestionText>Oxit axit có thể tác dụng được với</QuestionText>
+    <Choices>
+      <string>Oxit bazo</string>
+      <string>nước</string>
+      <string>bazo</string>
+      <string>Cả 3 hợp chất trên</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>Cả 3 hợp chất trên</CorrectAnswer>
+      <QuestionId>60</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>61</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>61</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>62</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>62</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>63</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>63</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>64</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>64</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>65</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>65</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>66</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>66</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>67</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>67</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>68</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>68</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>69</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>69</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>70</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>70</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>71</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>71</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>72</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>72</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>73</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>73</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>74</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>74</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>75</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>75</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>76</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>76</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>77</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>77</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>78</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>78</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>79</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>79</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>80</Id>
+    <QuestionText>Theo Menđen, yếu tố di truyền nguyên vẹn từ bố mẹ sang con là gì?</QuestionText>
+    <Choices>
+      <string>Alen</string>
+      <string>kiểu gen</string>
+      <string>tính trạng</string>
+      <string>nhân tố di truyền</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>nhân tố di truyền</CorrectAnswer>
+      <QuestionId>80</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>81</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>81</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>82</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>82</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>83</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>83</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>84</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>84</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>85</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>85</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>86</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>86</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>87</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>87</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>88</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>88</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>89</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>89</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>90</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>90</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>91</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>91</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>92</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>92</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>93</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>93</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>94</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>94</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>95</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>95</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>96</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>96</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>97</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>97</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>98</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>98</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>99</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>99</QuestionId>
+    </CorrectAnswer>
+  </MultipleChoiceQuestion>
+  <MultipleChoiceQuestion>
+    <Id>100</Id>
+    <QuestionText>The doll has been___________out of clay.</QuestionText>
+    <Choices>
+      <string>embroidered</string>
+      <string>cast</string>
+      <string>woven</string>
+      <string>moulded</string>
+    </Choices>
+    <CorrectAnswer>
+      <CorrectAnswer>moulded</CorrectAnswer>
+      <QuestionId>100</QuestionId>
     </CorrectAnswer>
   </MultipleChoiceQuestion>
 </Questions>

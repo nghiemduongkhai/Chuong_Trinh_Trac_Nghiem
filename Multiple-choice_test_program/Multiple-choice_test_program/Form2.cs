@@ -212,16 +212,71 @@ namespace Multiple_choice_test_program
         {
             if (currentQuestion > 0)
             {
+                int selectedAnswerIndex = -1;
                 if (radioButton1.Checked)
-                    selectedAnswers[currentQuestion] = 0; // Lưu lại đáp án A cho câu hỏi hiện tại
+                    selectedAnswerIndex = 0; // Lưu lại đáp án A cho câu hỏi hiện tại
                 else if (radioButton2.Checked)
-                    selectedAnswers[currentQuestion] = 1; // Lưu lại đáp án B cho câu hỏi hiện tại
+                    selectedAnswerIndex = 1; // Lưu lại đáp án B cho câu hỏi hiện tại
                 else if (radioButton3.Checked)
-                    selectedAnswers[currentQuestion] = 2; // Lưu lại đáp án C cho câu hỏi hiện tại
+                    selectedAnswerIndex = 2; // Lưu lại đáp án C cho câu hỏi hiện tại
                 else if (radioButton4.Checked)
-                    selectedAnswers[currentQuestion] = 3; // Lưu lại đáp án D cho câu hỏi hiện tại
+                    selectedAnswerIndex = 3; // Lưu lại đáp án D cho câu hỏi hiện tại
+                // Kiểm tra xem đã chọn đáp án hay chưa
+                if (selectedAnswerIndex >= 0)  
+                {
+                    selectedAnswers[currentQuestion] = selectedAnswerIndex;
+                    CheckAnswer(selectedAnswerIndex);
 
-                selectedQuestionButton.BackColor = Color.Green; // Đổi màu nút câu hỏi đã trả lời
+                    // Chỉ thay đổi màu của nút câu hỏi nếu đáp án đã được chọn
+                    selectedQuestionButton.BackColor = Color.Green;
+                }
+            }
+        }
+        private void CheckAnswer(int selectedAnswerIndex)
+        {
+            // Lấy câu hỏi hiện tại
+            MultipleChoiceQuestion currentQues = Test.Questions[currentQuestion - 1] as MultipleChoiceQuestion;
+
+            if (currentQues != null)
+            {
+                // Lấy đáp án của câu hỏi
+                string selectedAnswer = GetSelectedAnswerText(selectedAnswerIndex);
+                // Kiểm tra xem đáp án có đúng không
+                int categoryCurrentId = Test.Category.CategoryId;
+                switch (categoryCurrentId)
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        currentQuestion += 20;
+                        break;
+                    case 3:
+                        currentQuestion += 40;
+                        break;
+                    case 4:
+                        currentQuestion += 60;
+                        break;
+                    case 5:
+                        currentQuestion += 80;
+                        break;
+                }
+                bool isCorrect = currentQues.CheckAnswer(new Selection(selectedAnswer, currentQuestion));
+                if (isCorrect)
+                {
+                    correctCount++; 
+                }
+            }
+        }
+        // Hàm lấy văn bản đáp án từ chỉ số đáp án
+        private string GetSelectedAnswerText(int answerIndex)
+        {
+            switch (answerIndex)
+            {
+                case 0: return radioButton1.Text;
+                case 1: return radioButton2.Text;
+                case 2: return radioButton3.Text;
+                case 3: return radioButton4.Text;
+                default: return string.Empty;
             }
         }
         //
