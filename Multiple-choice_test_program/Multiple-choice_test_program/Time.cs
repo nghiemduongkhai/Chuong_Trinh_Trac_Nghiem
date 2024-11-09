@@ -22,7 +22,8 @@ namespace Multiple_choice_test_program
             elapsedTime = 0; 
             timer = new Timer();
             timer.Interval = 1000;
-            timer.Tick += OnTimedEvent; 
+            timer.Tick += OnTimedEvent;
+            TimeUp += () => MessageBox.Show("Hết thời gian !!");
         }
         public void Start()
         {
@@ -45,7 +46,6 @@ namespace Multiple_choice_test_program
             if (IsTimeUp()) 
             {
                 timer.Stop();
-                MessageBox.Show("Hết thời gian !!");
                 TimeUp?.Invoke();
             }
         }

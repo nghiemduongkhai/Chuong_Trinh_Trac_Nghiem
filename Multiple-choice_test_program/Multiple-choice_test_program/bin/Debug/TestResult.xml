@@ -2,6 +2,42 @@
 <ArrayOfExamRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ExamRecord>
     <TestDate>09/11/2024</TestDate>
+    <Name>nghiem</Name>
+    <Category>Toán</Category>
+    <Score>10</Score>
+  </ExamRecord>
+  <ExamRecord>
+    <TestDate>09/11/2024</TestDate>
+    <Name>nghiem</Name>
+    <Category>Toán</Category>
+    <Score>0</Score>
+  </ExamRecord>
+  <ExamRecord>
+    <TestDate>09/11/2024</TestDate>
+    <Name>nghiem</Name>
+    <Category>Toán</Category>
+    <Score>0</Score>
+  </ExamRecord>
+  <ExamRecord>
+    <TestDate>09/11/2024</TestDate>
+    <Name>Bailu</Name>
+    <Category>Toán</Category>
+    <Score>1</Score>
+  </ExamRecord>
+  <ExamRecord>
+    <TestDate>09/11/2024</TestDate>
+    <Name>Bailu</Name>
+    <Category>Toán</Category>
+    <Score>1</Score>
+  </ExamRecord>
+  <ExamRecord>
+    <TestDate>09/11/2024</TestDate>
+    <Name>Bailu</Name>
+    <Category>Toán</Category>
+    <Score>1</Score>
+  </ExamRecord>
+  <ExamRecord>
+    <TestDate>09/11/2024</TestDate>
     <Name>Bailu</Name>
     <Category>Toán</Category>
     <Score>1</Score>

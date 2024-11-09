@@ -122,15 +122,26 @@ namespace Multiple_choice_test_program
             };
 
             // Tạo đối tượng XmlSerializer
-            XmlSerializer serializer = new XmlSerializer(typeof(List<MultipleChoiceQuestion>), new XmlRootAttribute("Questions"));
-
-            // Ghi vào file XML
-            using (FileStream stream = new FileStream("questions.xml", FileMode.Create))
+            try
             {
-                serializer.Serialize(stream, questions);
-            }
+                // Tạo đối tượng XmlSerializer
+                XmlSerializer serializer = new XmlSerializer(typeof(List<MultipleChoiceQuestion>), new XmlRootAttribute("Questions"));
 
-            Console.WriteLine("XML file has been created successfully!");
+                // Ghi vào file XML
+                using (FileStream stream = new FileStream("questions.xml", FileMode.Create))
+                {
+                    serializer.Serialize(stream, questions);
+                }
+                //MessageBox.Show("File XML đã được ghi thành công.");
+            }
+            catch (DirectoryNotFoundException ex)
+            {
+                MessageBox.Show("Không tìm thấy thư mục chứa file: " + ex.Message);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show("Lỗi khi tuần tự hóa dữ liệu: " + ex.Message);
+            }
 
 
             Application.EnableVisualStyles();

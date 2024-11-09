@@ -6,17 +6,21 @@ namespace Multiple_choice_test_program
     [Serializable]
     public class ExamRecord
     {
-        public string TestDate { get; set; }
-        public string Name { get; set; }
-        public string Category { get; set; }
-        public string Score { get; set; }
+        private string testDate;
+        private string name;
+        private string category;
+        private string score;
+        public string TestDate { get => testDate; set => testDate = value; }
+        public string Name { get => name; set => name = value; }
+        public string Category { get => category; set => category = value; }
+        public string Score { get => score; set => score = value; }
         public ExamRecord() { }
         public ExamRecord(string testDate, string name, string category, string score)
         {
-            Name = name;
-            Score = score;
-            TestDate = testDate;
-            Category = category;
+            this.name = name;
+            this.score = score;
+            this.testDate = testDate;
+            this.category = category;
         }
     }
 }

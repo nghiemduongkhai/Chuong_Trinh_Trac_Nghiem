@@ -26,6 +26,11 @@ namespace Multiple_choice_test_program
                 label10.Text = $"{elapsedTime}";
             }
         }
+        public Form3()
+        {
+            InitializeComponent();
+            this.FormClosed += Form3_FormClosed;
+        }
         public void SaveExamRecord()
         {
             // Tạo đối tượng ExamRecord mới từ các label
@@ -67,12 +72,6 @@ namespace Multiple_choice_test_program
             }
 
             return examRecords;
-        }
-
-        public Form3()
-        {
-            InitializeComponent();
-            this.FormClosed += Form3_FormClosed;
         }
         public void SetName(string name)
         {

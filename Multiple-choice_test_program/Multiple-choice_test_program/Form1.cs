@@ -49,11 +49,16 @@ namespace Multiple_choice_test_program
             {
                 return null;
             }
-
-            // Tìm bản ghi mới nhất
-            ExamRecord latestRecord = examRecords
-                .OrderByDescending(record => DateTime.Parse(record.TestDate))
-                .FirstOrDefault();
+            ExamRecord latestRecord = examRecords[0];  // Giả sử bản ghi đầu tiên là mới nhất
+            // Lặp qua danh sách và tìm bản ghi có TestDate mới nhất
+            foreach (var record in examRecords)
+            {
+                // So sánh các ngày để tìm bản ghi mới nhất
+                if (DateTime.Parse(record.TestDate) > DateTime.Parse(latestRecord.TestDate))
+                {
+                    latestRecord = record;
+                }
+            }
             return new User
             {
                 Name = latestRecord.Name,

@@ -9,7 +9,6 @@ using System.Xml.Serialization;
 
 namespace Multiple_choice_test_program
 {
-    [Serializable]
     public class User
     {
         private string name;

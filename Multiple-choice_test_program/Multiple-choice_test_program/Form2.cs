@@ -21,7 +21,6 @@ namespace Multiple_choice_test_program
         private int currentQuestion = 0;
         private int answerId;  
         private bool[] checkAnswer = new bool[20];
-        private string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "dataUser.xml");
         public string NameUser { get; set; }
         public User User { get; set; }
         public string SelectedValue
@@ -54,7 +53,7 @@ namespace Multiple_choice_test_program
         private void GetQuestion(int i)
         { 
             // Lấy câu hỏi từ danh sách
-            MultipleChoiceQuestion question = Test.Questions[i - 1] as MultipleChoiceQuestion;
+            Question question = Test.Questions[i - 1] as MultipleChoiceQuestion;
             if (question != null)
             {
                 List<RadioButton> radioButtons = new List<RadioButton> 
@@ -316,11 +315,14 @@ namespace Multiple_choice_test_program
         private void OnTimeUp()
         {
             string elapsedTime = time.GetElapsedTime();
+            ScoreCalculator calculator = new ScoreCalculator();
+            float score = calculator.CalculateScore(correctCount, Test.Questions.Count);
             Form3 form3 = new Form3();
             form3.SetName(NameUser);
             form3.SetCategory(SelectedValue);
             form3.SetDate(GetDate);
             form3.ElapsedTime = elapsedTime;
+            form3.SetScore(score.ToString());
             form3.Show();
             form3.Location = Location;
             Hide(); 
