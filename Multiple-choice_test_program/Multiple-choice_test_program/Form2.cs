@@ -19,6 +19,8 @@ namespace Multiple_choice_test_program
         private Button selectedQuestionButton;
         private MultipleChoiceQuestion question;
         private int currentQuestion = 0;
+        private int answerId;  
+        private bool[] checkAnswer = new bool[20];
         private string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "dataUser.xml");
         public string NameUser { get; set; }
         public User User { get; set; }
@@ -246,24 +248,29 @@ namespace Multiple_choice_test_program
                 switch (categoryCurrentId)
                 {
                     case 1:
+                        answerId = currentQuestion;
                         break;
                     case 2:
-                        currentQuestion += 20;
+                        answerId = currentQuestion + 20;
                         break;
                     case 3:
-                        currentQuestion += 40;
+                        answerId = currentQuestion + 40;
                         break;
                     case 4:
-                        currentQuestion += 60;
+                        answerId = currentQuestion + 60;
                         break;
                     case 5:
-                        currentQuestion += 80;
+                        answerId = currentQuestion + 80;
                         break;
                 }
-                bool isCorrect = currentQues.CheckAnswer(new Selection(selectedAnswer, currentQuestion));
+                bool isCorrect = currentQues.CheckAnswer(new Selection(selectedAnswer, answerId));
                 if (isCorrect)
                 {
-                    correctCount++; 
+                    if (!checkAnswer[currentQuestion - 1])
+                    {
+                        correctCount++;
+                        checkAnswer[currentQuestion - 1] = true;
+                    }
                 }
             }
         }
@@ -286,12 +293,6 @@ namespace Multiple_choice_test_program
                 MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
-                int userIndex = User.GetUserIndex(NameUser);
-                if (userIndex != -1)
-                {
-                    User.IncrementTestCount(userIndex);
-                    User.SaveUser(filePath);
-                }
                 time.Stop();
                 string elapsedTime = time.GetElapsedTime();
                 // Tính điểm 

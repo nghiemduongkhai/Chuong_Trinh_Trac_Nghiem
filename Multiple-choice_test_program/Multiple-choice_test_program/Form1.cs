@@ -19,20 +19,20 @@ namespace Multiple_choice_test_program
         private QuestionBank questionBank;
         private Test test;
         private bool isInitializing = true;
-        private string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "dataUser.xml");
         public Form1()
         {
+            User user = new User();
             InitializeComponent();
             timerDate.Tick += new EventHandler(timerDate_Tick);
             timerDate.Start();
             LoadCategories();
             isInitializing = false;
             // Deserialize User từ file XML
-            currentUser = User.LoadUser(filePath);
+            currentUser = GetLatestUser();
             // Nếu currentUser không null, hiển thị tên người dùng trong textBox
-            if (currentUser != null && currentUser.Names.Count > 0)
+            if (currentUser != null)
             {
-                textBox1.Text = string.Empty;
+                textBox1.Text = currentUser.Name;
             }
             else
             {
@@ -40,14 +40,24 @@ namespace Multiple_choice_test_program
             }
             this.FormClosed += Form1_FormClosed;
         }
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        private User GetLatestUser()
         {
-            // Lưu đối tượng currentUser vào file XML
-            if (currentUser != null)
+            Form3 form3 = new Form3();
+            List<ExamRecord> examRecords = form3.LoadExamRecords();
+
+            if (examRecords.Count == 0)
             {
-                currentUser.SaveUser(filePath);
+                return null;
             }
-            Application.Exit();
+
+            // Tìm bản ghi mới nhất
+            ExamRecord latestRecord = examRecords
+                .OrderByDescending(record => DateTime.Parse(record.TestDate))
+                .FirstOrDefault();
+            return new User
+            {
+                Name = latestRecord.Name,
+            };
         }
         private void LoadCategories()
         {
@@ -115,11 +125,14 @@ namespace Multiple_choice_test_program
             string userName = textBox1.Text.Trim();
             if (!string.IsNullOrEmpty(userName))
             {
-                // Kiểm tra tên người dùng đã có trong danh sách chưa, nếu chưa thì thêm mới
-                int userIndex = currentUser.GetUserIndex(userName);
-                if (userIndex == -1)  // Nếu không tìm thấy tên trong danh sách
+                // Gán tên cho User (khởi tạo mới hoặc cập nhật)
+                if (currentUser == null)
                 {
-                    currentUser.AddUser(userName);  // Thêm người dùng mới vào danh sách
+                    currentUser = new User(userName); // Tạo mới User nếu chưa có
+                }
+                else
+                {
+                    currentUser.Name = userName; // Cập nhật tên nếu User đã tồn tại
                 }
             }
             else
@@ -163,6 +176,10 @@ namespace Multiple_choice_test_program
             form4.Show();
             form4.Location = Location;
             Hide();
+        }
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
